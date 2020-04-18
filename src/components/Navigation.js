@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Navigation.scss";
 
 function Navigation({ logoSrc, menus }) {
   return (
@@ -15,8 +16,19 @@ function Navigation({ logoSrc, menus }) {
       </div>
       <ul className="Navigation__menu-container">
         {menus.map(menu => (
-          <li>
+          <li key={menu.name} className="Navigation__menu-container__menu">
             <Link to={menu.link}>{menu.name}</Link>
+            <ul className="Navigation__submenu-container">
+              {menu.subMenus &&
+                menu.subMenus.map(subMenu => (
+                  <li
+                    key={subMenu.name}
+                    className="Navigation__submenu-container__submenu"
+                  >
+                    <Link to={subMenu.link}>{subMenu.name}</Link>
+                  </li>
+                ))}
+            </ul>
           </li>
         ))}
       </ul>
