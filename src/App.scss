@@ -1,3 +1,9 @@
+@import "./variable";
+
+body {
+  background-color: $theme-color;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
