@@ -6,6 +6,7 @@ import Navigation from "./components/Navigation";
 import Prologue from "./routes/Prologue";
 import BrandStory from "./routes/BrandStory";
 import Footer from "./components/Footer";
+import Prologue from "./routes/Prologue";
 
 export default function App() {
   const menus = [
