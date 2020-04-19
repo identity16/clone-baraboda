@@ -3,6 +3,8 @@ import "./App.scss";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Main from "./routes/Main";
 import Navigation from "./components/Navigation";
+import Prologue from "./routes/Prologue";
+import BrandStory from "./routes/BrandStory";
 import Footer from "./components/Footer";
 import Prologue from "./routes/Prologue";
 
@@ -18,7 +20,7 @@ export default function App() {
         },
         {
           name: "브랜드 이야기",
-          link: "/"
+          link: "/brand-story"
         },
         {
           name: "둘러보기",
@@ -65,6 +67,7 @@ export default function App() {
         <Navigation logoSrc="https://picsum.photos/185/48" menus={menus} />
         <Route path="/" exact component={Main} />
         <Route path="/prologue" component={Prologue} />
+        <Route path="/brand-story" component={BrandStory} />
         <Footer />
       </Router>
     </div>
