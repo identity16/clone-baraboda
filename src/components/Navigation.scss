@@ -1,6 +1,9 @@
 @import "../variable";
 .Navigation {
   background-color: $theme-color;
+  position: relative;
+  z-index: 1;
+
   .Navigation__logo-container {
     padding: 30px 0 40px 0;
   }

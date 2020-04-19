@@ -5,8 +5,9 @@ import Main from "./routes/Main";
 import Navigation from "./components/Navigation";
 import Prologue from "./routes/Prologue";
 import BrandStory from "./routes/BrandStory";
+import Explore from "./routes/Explore";
 import Footer from "./components/Footer";
-import Prologue from "./routes/Prologue";
+import Location from "./routes/Location";
 
 export default function App() {
   const menus = [
@@ -24,11 +25,11 @@ export default function App() {
         },
         {
           name: "둘러보기",
-          link: "/"
+          link: "/explore"
         },
         {
           name: "위치안내",
-          link: "/"
+          link: "/location"
         }
       ]
     },
@@ -68,6 +69,8 @@ export default function App() {
         <Route path="/" exact component={Main} />
         <Route path="/prologue" component={Prologue} />
         <Route path="/brand-story" component={BrandStory} />
+        <Route path="/explore" component={Explore} />
+        <Route path="/location" component={Location} />
         <Footer />
       </Router>
     </div>

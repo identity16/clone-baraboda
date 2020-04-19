@@ -1,0 +1,50 @@
+.Location {
+  max-width: 1200px;
+  margin: 0 auto;
+  .Location__info {
+    display: flex;
+    justify-content: center;
+    ul {
+      text-align: left;
+      list-style: none;
+      padding: 0 5%;
+      margin: 0;
+
+      li {
+        padding: 10px 0;
+        border-bottom: black 2px solid;
+        strong {
+          margin-right: 15px;
+        }
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+  .Location__check {
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        margin: 0 15px;
+        img {
+          width: 100%;
+          max-width: 85px;
+        }
+        p {
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+
+  .Location__sketch {
+    width: 100%;
+  }
+}
