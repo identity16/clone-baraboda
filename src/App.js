@@ -3,21 +3,23 @@ import "./App.scss";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Main from "./routes/Main";
 import Navigation from "./components/Navigation";
+import Prologue from "./routes/Prologue";
+import BrandStory from "./routes/BrandStory";
 import Footer from "./components/Footer";
 
 export default function App() {
   const menus = [
     {
       name: "바라보다 소개",
-      link: "/",
+      link: "/prologue",
       subMenus: [
         {
           name: "프롤로그",
-          link: "/"
+          link: "/prologue"
         },
         {
           name: "브랜드 이야기",
-          link: "/"
+          link: "/brand-story"
         },
         {
           name: "둘러보기",
@@ -63,6 +65,8 @@ export default function App() {
       <Router>
         <Navigation logoSrc="https://picsum.photos/185/48" menus={menus} />
         <Route path="/" exact component={Main} />
+        <Route path="/prologue" component={Prologue} />
+        <Route path="/brand-story" component={BrandStory} />
         <Footer />
       </Router>
     </div>

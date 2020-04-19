@@ -12,10 +12,10 @@ function Footer() {
         소중한 경험으로 남을 수 있도록 하겠습니다.
       </p>
       <button>미스터콩 쇼핑몰 바로가기</button>
-      <p className="Footer__info">
+      <section className="Footer__info">
         <address>주소 : 경기도 남양주시 조안면 다산로 566-3</address>
         TEL.<a href="tel:031-576-0007">031-576-0007</a>
-      </p>
+      </section>
       <p className="Footer__copyright">
         COPYRIGHT © BARABODA. ALL RIGHTS RESERVED.
       </p>
