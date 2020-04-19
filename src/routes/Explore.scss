@@ -1,0 +1,29 @@
+.Explore {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  
+  .Explore__gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    .Explore__gallery__item {
+      width: 30%;
+      padding-top: 30%;
+      margin: calc(10% / 6);
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top:0;
+        left: 0;
+      }
+    }
+  }
+
+  .Explore__btn-more {
+    margin-top: 30px;
+  }
+}

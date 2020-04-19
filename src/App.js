@@ -5,6 +5,7 @@ import Main from "./routes/Main";
 import Navigation from "./components/Navigation";
 import Prologue from "./routes/Prologue";
 import BrandStory from "./routes/BrandStory";
+import Explore from "./routes/Explore";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -23,7 +24,7 @@ export default function App() {
         },
         {
           name: "둘러보기",
-          link: "/"
+          link: "/explore"
         },
         {
           name: "위치안내",
@@ -67,6 +68,7 @@ export default function App() {
         <Route path="/" exact component={Main} />
         <Route path="/prologue" component={Prologue} />
         <Route path="/brand-story" component={BrandStory} />
+        <Route path="/explore" component={Explore} />
         <Footer />
       </Router>
     </div>
