@@ -9,6 +9,7 @@ import Explore from "./routes/Explore";
 import Footer from "./components/Footer";
 import Location from "./routes/Location";
 import Menu from "./routes/Menu";
+import TodayCoffee from "./routes/TodayCoffee";
 
 export default function App() {
   const menus = [
@@ -44,7 +45,7 @@ export default function App() {
         },
         {
           name: "오늘의 커피",
-          link: "/"
+          link: "/today-coffee"
         }
       ]
     },
@@ -73,6 +74,7 @@ export default function App() {
         <Route path="/explore" component={Explore} />
         <Route path="/location" component={Location} />
         <Route path="/menu" component={Menu} />
+        <Route path="/today-coffee" component={TodayCoffee} />
         <Footer />
       </Router>
     </div>
