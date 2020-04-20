@@ -8,6 +8,8 @@ import BrandStory from "./routes/BrandStory";
 import Explore from "./routes/Explore";
 import Footer from "./components/Footer";
 import Location from "./routes/Location";
+import Menu from "./routes/Menu";
+import TodayCoffee from "./routes/TodayCoffee";
 
 export default function App() {
   const menus = [
@@ -35,15 +37,15 @@ export default function App() {
     },
     {
       name: "메뉴안내",
-      link: "/",
+      link: "/menu",
       subMenus: [
         {
           name: "바라보다 메뉴",
-          link: "/"
+          link: "/menu"
         },
         {
           name: "오늘의 커피",
-          link: "/"
+          link: "/today-coffee"
         }
       ]
     },
@@ -71,6 +73,8 @@ export default function App() {
         <Route path="/brand-story" component={BrandStory} />
         <Route path="/explore" component={Explore} />
         <Route path="/location" component={Location} />
+        <Route path="/menu" component={Menu} />
+        <Route path="/today-coffee" component={TodayCoffee} />
         <Footer />
       </Router>
     </div>
