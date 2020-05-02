@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Location from "./routes/Location";
 import Menu from "./routes/Menu";
 import TodayCoffee from "./routes/TodayCoffee";
+import CoffeeStory from "./routes/CoffeeStory";
 
 export default function App() {
   const menus = [
@@ -51,11 +52,11 @@ export default function App() {
     },
     {
       name: "소통공간",
-      link: "/",
+      link: "/coffee-story",
       subMenus: [
         {
           name: "커피이야기",
-          link: "/"
+          link: "/coffee-story"
         },
         {
           name: "공지사항",
@@ -75,6 +76,7 @@ export default function App() {
         <Route path="/location" component={Location} />
         <Route path="/menu" component={Menu} />
         <Route path="/today-coffee" component={TodayCoffee} />
+        <Route path="/coffee-story" component={CoffeeStory} />
         <Footer />
       </Router>
     </div>
