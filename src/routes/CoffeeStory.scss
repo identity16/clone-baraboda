@@ -1,0 +1,21 @@
+@import "../variable";
+
+$column-num: 3;
+$column-gap: 30px;
+
+.CoffeeStory {
+  max-width: $max-container-width;
+  margin: 0 auto;
+  padding-bottom: 80px;
+
+  .CoffeeStory__masonry-container {
+    width: 90%;
+    margin: 0 auto;
+
+    .Card {
+      width: calc((100% / #{$column-num}) - (#{$column-gap}));
+      height: 250px;
+      margin: #{$column-gap / 2};
+    }
+  }
+}
